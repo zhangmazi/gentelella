@@ -142,7 +142,7 @@ $(document).ready(function() {
         } else {
             $SIDEBAR_MENU.find('li.active-sm ul').show();
             $SIDEBAR_MENU.find('li.active-sm').addClass('active').removeClass('active-sm');
-            $.cookie(_G_CONFIG.cookie_prefix + 'menu_toggle_status', 'expose')
+            $.cookie(_G_CONFIG.cookie_prefix + 'menu_toggle_status', 'expose', {path: '/' })
         }
     }
 
@@ -152,13 +152,13 @@ $(document).ready(function() {
             $SIDEBAR_MENU.find('li.active ul').hide();
             $SIDEBAR_MENU.find('li.active').addClass('active-sm').removeClass('active');
             if ($.cookie) {
-                $.cookie(_G_CONFIG.cookie_prefix + 'menu_toggle_status', 'close');
+                $.cookie(_G_CONFIG.cookie_prefix + 'menu_toggle_status', 'close', {path: '/' });
             }
         } else {
             $SIDEBAR_MENU.find('li.active-sm ul').show();
             $SIDEBAR_MENU.find('li.active-sm').addClass('active').removeClass('active-sm');
             if ($.cookie) {
-                $.cookie(_G_CONFIG.cookie_prefix + 'menu_toggle_status', 'expose');
+                $.cookie(_G_CONFIG.cookie_prefix + 'menu_toggle_status', 'expose', {path: '/' });
             }
         }
 

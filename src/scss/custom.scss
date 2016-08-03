@@ -1,3 +1,7 @@
+// start 定义变量
+$menu_width: 198px;
+// end 定义变量
+
 .left_col {
   background: #2A3F54;
 }
@@ -190,7 +194,7 @@
 }
 .nav-md .container.body .col-md-3.left_col {
   min-height: 100%;
-  width: 198px;
+  width: $menu_width;
   padding: 0;
   position: absolute;
   display: flex;
@@ -205,10 +209,10 @@ body .container.body .right_col {
 }
 .nav-md .container.body .right_col {
   padding: 10px 20px 0;
-  margin-left: 198px;
+  margin-left: $menu_width;
 }
 .nav_title {
-  width: 198px;
+  width: $menu_width;
   float: left;
   background: #2A3F54;
   border-radius: 0;
@@ -344,7 +348,7 @@ body {
 }
 .main_container .top_nav {
   display: block;
-  margin-left: 198px;
+  margin-left: $menu_width;
 }
 .main_container {}
 .no-padding {
@@ -1532,7 +1536,7 @@ span.right {
   display: block;
   padding: 5px 0 0 0;
   position: fixed;
-  width: 198px;
+  width: $menu_width;
   background: #2A3F54;
 }
 .sidebar-footer a {
@@ -1564,7 +1568,7 @@ span.right {
 
 @media (min-width: 992px) {
   footer {
-    margin-left: 198px;
+    margin-left: $menu_width;
   }
 }
 
@@ -4413,7 +4417,7 @@ ul.notifications {
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: 4px;
-  width: 198px;
+  width: $menu_width;
   overflow: hidden;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
@@ -4648,3 +4652,12 @@ ul.notifications {
   border: 1px solid #e5e5e5;
 }
 /** /Dropzone.js **/
+
+/* myself */
+.custom-pagination {
+  text-align: right;
+}
+.custom-pagination .pagination {
+    margin: 0px;
+}
+

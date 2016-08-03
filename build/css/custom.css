@@ -4128,3 +4128,9 @@ ul.notifications {
   border: 1px solid #e5e5e5; }
 
 /** /Dropzone.js **/
+/* myself */
+.custom-pagination {
+  text-align: right; }
+
+.custom-pagination .pagination {
+  margin: 0px; }
